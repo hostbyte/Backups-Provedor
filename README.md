@@ -1,1 +1,57 @@
-# Backups-Provedor
+# Backups Provedor
+
+Backups Rede Mikrotik e Ubiquiti
+
+Script destinado a backups de roteadores e rádios mikrotik e ubiquiti
+
+Backup efetuado via SSH usando chave RSA
+
+Os arquivos de texto "ips_mikrotik.txt" e "ips_ubiquiti.txt" 
+
+É a lista onde o usuário deve inserir seus respectivos ips que representam seus equipamentos na rede
+
+Os arquivos de texto "backups_mikrotik.txt" e "backups_ubiquiti.txt", é uma lista de ips ativos que responderam a requisição icmp, onde sera consultado para efetuar o backup do roteador ou rádio
+
+Equipamentos que não responderam a requisição de icmp, ficara fora da lista de backups
+
+# Observação:
+No script existem algumas variaveis a serem alteradas, exemplos:
+
+( usuario_mikrotik="seu_usuario" ) ( senha_mikrotik="sua_senha" )
+
+( usuario_ubiquiti="seu_usuario" ) ( senha_ubiquiti="sua_senha" )
+
+Altere os dados de acordo com sua necessidade, inserindo seu usuario e senha corretamente
+
+Sinta-se a vontade para modificar ou melhorar este script
+
+Instale o "sshpass", confira alguns exemplos para instalação em algumas distros
+
+# Debian/Ubuntu/Mint
+$ sudo apt-get install sshpass
+
+# CentOS/RedHat
+$ sudo yum install sshpass
+
+# Fedora
+$ sudo dnf install sshpass
+
+# Arch
+$ sudo pacman -S sshpass
+
+# OpenSuse
+$ sudo zypper install sshpass
+
+# Para gerar sua chave RSA, siga o exemplo abaixo:
+
+$ ssh-keygen
+
+Depois de gerar sua chave, importe a mesma para seus roteadores e rádios
+
+Dica: antes de executar o script pela primeira vez, efetue o login via ssh manualmente ao menos umas vez.
+
+A transferencia da chave pode ser feita via winbox para roteadores mikrotik e via browser para rádios ubiquiti
+
+Para tranferir via linha de comando, basta usar o camando descrito abaixo:
+
+$ scp id_rsa.pub seu_usuario@ip_destino:/destino_no_dispositivo
