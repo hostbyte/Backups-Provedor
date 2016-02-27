@@ -6,9 +6,9 @@ Script destinado a backups de roteadores e rádios mikrotik e ubiquiti
 
 Backup efetuado via SSH usando chave RSA
 
-Os arquivos de texto "ips_mikrotik.txt" e "ips_ubiquiti.txt" 
+Os arquivos de texto "ips_mikrotik.txt" e "ips_ubiquiti.txt" são destinados
 
-É a lista onde o usuário deve inserir seus respectivos ips que representam seus equipamentos na rede
+a lista onde o usuário deve inserir seus respectivos ips que representam seus equipamentos na rede
 
 Os arquivos de texto "backups_mikrotik.txt" e "backups_ubiquiti.txt", é uma lista de ips ativos que responderam a requisição icmp, onde sera consultado para efetuar o backup do roteador ou rádio
 
