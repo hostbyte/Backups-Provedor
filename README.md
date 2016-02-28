@@ -12,6 +12,11 @@ a lista onde o usuário deve inserir seus respectivos ips que representam seus e
 
 Os arquivos de texto "backups_mikrotik.txt" e "backups_ubiquiti.txt", é uma lista de ips ativos que responderam a requisição icmp, onde sera consultado para efetuar o backup do roteador ou rádio
 
+Resumindo o funcionamento do script, é executado um teste via ping para saber se o equipamento esta online, cada dispositivo que responder ao ping, seu ip vai para uma lista no qual o script verfica e executa o backup.
+
+Backup do mikrotik é feito nada mais do um "export" de todas as configurações, no caso dos equipamentos ubiquit
+é executado um "cat /tmp/system.cfg" que é similar ao export do mikrotik. Isso ira gerar um arquivo com o nome de backup-ip_do_equipamento.rsc para mikrotik e backup-ip_do_equipamento.cfg para ubiquiti.
+
 Equipamentos que não responderam a requisição de icmp, ficara fora da lista de backups
 
 # Observação:
