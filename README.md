@@ -20,6 +20,9 @@ enviados para seus respectivos diretorios, que consistem em 2 pastas. Um diretor
 essas pastas são: Mikrotik e Ubiquiti que dentro delas contem os diretorios com os backups, todos os diretorios são
 identificados por sua data e hora de execução do backup.
 
+O script matem copias de 7 dias de backup, assim deletando arquivos não modificados com tempo superior a uma semana,
+evitando o acumulo de dados e o desperdicio de espaço em disco.
+
 Equipamentos que não responderam a requisição de icmp, ficara fora da lista de backups aguardando a proxima execução para
 checar novamente quem esta online e assim realizar o backup dos mesmos.
 
