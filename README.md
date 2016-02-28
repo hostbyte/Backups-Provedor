@@ -14,8 +14,11 @@ Os arquivos de texto "backups_mikrotik.txt" e "backups_ubiquiti.txt", é uma lis
 
 Resumindo o funcionamento do script, é executado um teste via ping para saber se o equipamento esta online, cada dispositivo que responder ao ping, seu ip vai para uma lista no qual o script verfica e executa o backup.
 
-Backup do mikrotik é feito nada mais do um "export" de todas as configurações, no caso dos equipamentos ubiquit
-é executado um "cat /tmp/system.cfg" que é similar ao export do mikrotik. Isso ira gerar um arquivo com o nome de backup-ip_do_equipamento.rsc para mikrotik e backup-ip_do_equipamento.cfg para ubiquiti.
+Backup do mikrotik é feito nada mais do que um "export" de todas as configurações, no caso dos equipamentos ubiquit
+é executado um "cat /tmp/system.cfg" que é similar ao export do mikrotik. Isso ira gerar um arquivo com o nome de backup-ip_do_equipamento.rsc para mikrotik e backup-ip_do_equipamento.cfg para ubiquiti. Os arquivos gerados são
+enviados para seus respectivos diretorios, que consistem em 2 pastas. Um diretorio para cada tipo de equipamento,
+essas pastas são: Mikrotik e Ubiquiti que dentro delas contem os diretorios com os backups, todos os diretorios são
+identificados por sua data e hora de execução do backup.
 
 Equipamentos que não responderam a requisição de icmp, ficara fora da lista de backups
 
