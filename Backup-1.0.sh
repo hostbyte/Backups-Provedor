@@ -21,6 +21,7 @@ DIRETORIO_MIKROTIK="Mikrotik"
 # Se o roteador responder, mostra mensagem de "Online"
 # Escreve o ip no arquivo "backups_mikrotik.txt"
 echo "Checando Roteadores Mikrotik Online"
+echo "Gravando ip dos roteadores ativos"
 for Mikrotik in $( cat $IPS_MIKROTIK )
 do
 ping -q -c2 $Mikrotik > /dev/null
@@ -28,7 +29,6 @@ ping -q -c2 $Mikrotik > /dev/null
 if [ $? -eq 0 ]
 then
 echo $Mikrotik "Online"
-echo "Gravando ip dos roteadores ativos"
 echo $Mikrotik >> $BACKUPS_MIKROTIK
 else
 echo $Mikrotik "Offline"
@@ -94,6 +94,7 @@ DIRETORIO_UBIQUITI="Ubiquiti"
 # Se o rádio responder, mostra mensagem de "Online"
 # Escreve o ip no arquivo "ips_ubiquiti.txt"
 echo "Checando Rádios Ubiquiti Online"
+echo "Gravando ip dos rádios ativos"
 for Ubiquiti in $( cat $IPS_UBIQUITI )
 do
 ping -q -c2 $Ubiquiti > /dev/null
@@ -101,7 +102,6 @@ ping -q -c2 $Ubiquiti > /dev/null
 if [ $? -eq 0 ]
 then
 echo $Ubiquiti "Online"
-echo "Gravando ip dos rádios ativos"
 echo $Ubiquiti >> $BACKUPS_UBIQUITI 
 else
 echo $Ubiquiti "Offline"
