@@ -73,7 +73,7 @@ rsync -av *.rsc $DIRETORIO_MIKROTIK/"$Data"
 
 echo "Removendo arquivos de backups com mais de uma semana armazenados"
 sleep 2
-find $DIRETORIO_MIKROTIK/ -type d -mtime +1 -exec rm -rf {} \;
+find $DIRETORIO_MIKROTIK/ -ctime +7 -exec rm -rf {} \;
 
 echo "Limpando arquivos de backup do diretório de execução"
 sleep 2
@@ -146,7 +146,7 @@ rsync -av *.cfg $DIRETORIO_UBIQUITI/"$Data"
 
 echo "Removendo arquivos de backups com mais de uma semana armazenados"
 sleep 2
-find $DIRETORIO_UBIQUITI/ -type d -mtime +1 -exec rm -rf {} \;
+find $DIRETORIO_UBIQUITI/ -ctime +7 -exec rm -rf {} \;
 
 echo "Limpando arquivos de backup do diretório de execução"
 sleep 2
