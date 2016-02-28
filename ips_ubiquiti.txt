@@ -1,0 +1,1 @@
+# Lista de ips dos radios ubiquiti existentes na rede
