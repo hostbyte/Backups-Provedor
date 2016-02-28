@@ -57,7 +57,7 @@ $ ssh-keygen
 
 Depois de gerar sua chave, importe a mesma para seus roteadores e rádios
 
-Dica: antes de executar o script pela primeira vez, apos enviar a chave efetue o login via ssh manualmente ao menos umas vez.
+Dica: antes de executar o script pela primeira vez, apos enviar a chave efetue o login via ssh manualmente ao menos uma vez.
 
 A transferencia da chave pode ser feita via winbox para roteadores mikrotik e via browser para rádios ubiquiti
 
