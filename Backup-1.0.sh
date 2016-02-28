@@ -19,7 +19,7 @@ DIRETORIO_MIKROTIK="Mikrotik"
 # Checa a lista de ips dos roteadores mikrotik.
 # Teste via ping para verificar se o roteador esta respondendo.
 # Se o roteador responder, mostra mensagem de "Online"
-# Escreve o ip no arquivo "ips_mikrotik.txt"
+# Escreve o ip no arquivo "backups_mikrotik.txt"
 echo "Checando Roteadores Mikrotik Online"
 for Mikrotik in $( cat $IPS_MIKROTIK )
 do
