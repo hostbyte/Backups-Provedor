@@ -8,7 +8,7 @@
 # Criado em: 27/02/2016
 
 # Arquivo de texto com a lista de ips dos roteadores
-IPS_MIKROTIK="Mikrotik/ips_mikrotik.txt"
+IPS_MIKROTIK="ips_mikrotik.txt"
 
 # Arquivo de texto criado com a lista de ips dos roteadores ativos.
 BACKUPS_MIKROTIK="Mikrotik/backups_mikrotik.txt"
@@ -81,7 +81,7 @@ rm -rf *.rsc
 rm -rf $BACKUPS_MIKROTIK
 
 # Arquivo de texto com a lista de ips dos rádios
-IPS_UBIQUITI="Ubiquiti/ips_ubiquiti.txt"
+IPS_UBIQUITI="ips_ubiquiti.txt"
 
 # Arquivo de texto criado com a lista de ips dos rádios ativos.
 BACKUPS_UBIQUITI="Ubiquiti/backups_ubiquiti.txt"
