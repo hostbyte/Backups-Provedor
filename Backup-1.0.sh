@@ -3,7 +3,7 @@
 # O script usa o SSH + SSHPASS + chave RSA
 # Autor: Alessandro Almeida
 # E-mail: alessandro@isphost.com.br
-# Telefones: (53) 8138-3494 / (53) 3011-4233
+# Telefones: (53) 9989-0848
 # Website: https://www.isphost.com.br
 # Criado em: 27/02/2016
 
