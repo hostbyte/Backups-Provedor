@@ -3,7 +3,7 @@
 # O script usa o SSH + SSHPASS + chave RSA
 # Autor: Alessandro Almeida
 # E-mail: alessandro@hostbyte.com.br
-# Telefones: (53) 9989-0848
+# Telefones: (53) 99989-0848
 # Website: https://www.hostbyte.com.br
 # Criado em: 27/02/2016
 
