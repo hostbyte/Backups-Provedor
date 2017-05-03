@@ -2,9 +2,9 @@
 # Backup para redes com roteadores e rádios mikrotik e ubiquiti
 # O script usa o SSH + SSHPASS + chave RSA
 # Autor: Alessandro Almeida
-# E-mail: alessandro@isphost.com.br
+# E-mail: alessandro@hostbyte.com.br
 # Telefones: (53) 9989-0848
-# Website: https://www.isphost.com.br
+# Website: https://www.hostbyte.com.br
 # Criado em: 27/02/2016
 
 # Arquivo de texto com a lista de ips dos roteadores
