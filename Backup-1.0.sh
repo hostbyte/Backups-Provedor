@@ -156,16 +156,6 @@ rm -rf $BACKUPS_UBIQUITI
 echo "Backups realizados com sucesso!"
 sleep 2
 clear
-echo " ___ ____  ____  _   _           _   "
-echo "|_ _/ ___||  _ \| | | | ___  ___| |_ "
-echo " | |\___ \| |_) | |_| |/ _ \/ __| __|"
-echo " | | ___) |  __/|  _  | (_) \__ \ |_ "
-echo "|___|____/|_|   |_| |_|\___/|___/\__|"
-echo "                                     "
-echo "ISPHost - Internet Solutions"
-echo "Telefone: (53) 3011-4233"
-echo "Email: contato@isphost.com.br"
-echo "Website: https://www.isphost.com.br/"
 sleep 10
 echo "Saindo"
 sleep 5
